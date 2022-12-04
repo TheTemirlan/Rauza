@@ -1,0 +1,179 @@
+@import url("theme.css");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 1200px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  min-width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Navbar */
+.navbar {
+  height: 100px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--primary-grey);
+}
+
+.navbar a {
+  color: var(--primary-grey);
+  padding: 10px;
+  margin: 0px;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 800px;
+}
+
+.banner_img {
+  width: 165px;
+  height: 800px;
+  object-fit: cover;
+}
+
+.banner .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#banner_text {
+  margin-top: 200px;
+  width: 360px;
+  height: 260px;
+  font-family: var(--primary-font);
+  font-size: 52px;
+  font-weight: 300;
+  color: var(--primary-grey);
+}
+
+#banner_logo {
+  margin-top: 190px;
+  top: 300px;
+  font-family: var(--primary-font);
+  font-size: 52px;
+}
+
+#curtain_flex {
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  align-items: flex-start;
+  z-index: -1;
+}
+
+.curtain {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #01060B 0%, #042339 33.72%, #083C61 76.46%, #083C61 100%);
+}
+
+.podium {
+  width: 100%;
+  height: 225px;
+  background: radial-gradient(54.46% 54.46% at 50% 0%, rgba(63, 63, 68, 0.5) 0%, rgba(63, 63, 68, 0.9) 20.38%, rgba(63, 63, 68, 0.98) 38.57%, #3F3F44 49.85%, #3F3F44 72.87%);
+  position: relative
+}
+
+#man {
+  position: absolute;
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta_button {
+  background: var(--primary-accent-blue);
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--primary-grey);
+  border: none;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 55px;
+  top: 50px;
+  left: 50%;
+  border-radius: 120px;
+  box-shadow: 0px 7px 15px rgba(61, 124, 246, 0.15), 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Who we are */
+.who_we_are {
+  height: 350px;
+  background: var(--primary-grey);
+}
+
+#who_we_are_logo {
+  min-height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#who_we_are_text_block {
+  width: 750px;
+  color: #3F3F44;
+}
+
+/* Our experience */
+#our_experience {
+  height: 530px;
+  background: var(--primary-dark-blue);
+}
+
+#our_experience_content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#our_experience_block {
+  width: 350px;
+}
+
+.our_experience_h1 {
+  margin-bottom: 40px;
+}
+
+.our_experience_h2 {
+  margin-bottom: 10px;
+}
+
+.our_experience_h3 {
+  margin-bottom: 25px;
+}

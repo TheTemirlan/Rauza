@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-accent-blue: #3D7CF6;
+    --primary-grey: #E7E7E7;
+    --primary-dark-blue: #173EA3;
+
+    --secondary-black: #3F3F44;
+    --secondary-dark-grey: #C0C0C0;
+
+    --primary-font: "Roboto";
+    --secondary-font: "Montserrat";
+}
+
+.h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    /* identical to box height, or 25px */
+
+    color: #000000;
+}
+
+.h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+    /* identical to box height, or 30px */
+
+    color: #000000;
+}
+
+.s2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 137%;
+}
+
+.s4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    /* identical to box height, or 20px */
+
+    color: #000000;
+}
+
+.primary_grey {
+    color: var(--primary-grey);
+}
+
+.primary_dark_blue {
+    color: var(--primary-dark-blue);
+}
+
+.secondary_black {
+    color: var(--secondary-black);
+}
+
+.secondary_dark_grey {
+    color: var(--secondary-dark-grey);
+}
