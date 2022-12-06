@@ -1,4 +1,5 @@
 @import url("theme.css");
+@import url("common.css");
 
 * {
   box-sizing: border-box;
@@ -14,6 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -138,6 +140,7 @@ ul {
 }
 
 #who_we_are_logo {
+  margin-left: 30px;
   min-height: 105px;
   display: flex;
   flex-direction: column;
@@ -175,5 +178,120 @@ ul {
 }
 
 .our_experience_h3 {
+  display: flex;
   margin-bottom: 25px;
+}
+
+/* Out achievements */
+#our_achievements {
+  height: 620px;
+  background: var(--primary-dark-blue);
+  background-image: url("../images/world_map.png");
+  background-position: center;
+}
+
+#our_achievements .h2{
+  margin-bottom: 5px;
+}
+
+#our_achievements_title {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#our_achievements_content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#our_achievements .flex_1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#our_achievements .flex_2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#our_achievements .flex_3 {
+  display: flex;
+  min-width: 360px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Out achievements */
+#our_specializations {
+  height: 540px;
+  background: var(--primary-grey);
+}
+
+#our_specializations .container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+#our_specializations .block {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  height: 60px;
+  min-width: 360px;
+  max-width: 360px;
+}
+
+#our_specializations .s4 {
+  color: var(--primary-dark-blue);
+}
+
+#our_specializations .h2 {
+  color: var(--primary-dark-blue);
+}
+
+#our_specializations .flex{
+  row-gap: 60px;
+}
+
+/* Why only with us */
+#only_with_us {
+  height: 365px;
+  background: var(--primary-dark-blue);
+}
+
+#only_with_us .infoblock {
+  width: 100%;
+  height: 80px;
+}
+
+#only_with_us .container {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+#only_with_us .h3 {
+  color: var(--primary-grey);
+}
+
+#only_with_us .s4 {
+  width: 250px;
+  height: 100%;
+  color: var(--primary-grey);
+}
+
+#only_with_us .flex {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 45px;
 }
