@@ -190,7 +190,7 @@ ul {
   background-position: center;
 }
 
-#our_achievements .h2{
+#our_achievements .h2 {
   margin-bottom: 5px;
 }
 
@@ -235,7 +235,7 @@ ul {
   background: var(--primary-grey);
 }
 
-#our_specializations .container{
+#our_specializations .container {
   display: flex;
   flex-direction: column;
   row-gap: 70px;
@@ -260,7 +260,7 @@ ul {
   color: var(--primary-dark-blue);
 }
 
-#our_specializations .flex{
+#our_specializations .flex {
   row-gap: 60px;
 }
 
@@ -294,4 +294,93 @@ ul {
   display: flex;
   justify-content: space-between;
   row-gap: 45px;
+}
+
+/* Key to success */
+#key_to_success {
+  position: relative;
+  height: 685px;
+  background: var(--primary-grey);
+}
+
+#key_to_success .right_block {
+  position: absolute;
+  left: calc(50% + 15px);
+  right: 0;
+  background: var(--primary-dark-blue);
+  height: 100%;
+}
+
+#key_to_success .container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+#key_to_success .block_1 {
+  /* height: 100%; */
+  width: 535px;
+  background: var(--primary-grey);
+}
+
+#key_to_success .block_2 {
+  /* height: 100%; */
+  width: 505px;
+  background: var(--primary-dark-blue);
+}
+
+#key_to_success .flex {
+  display: flex;
+  justify-content: flex-between;
+  align-items: center;
+  row-gap: 45px;
+} 
+
+@media (max-width: 500px) {
+  #key_to_success {
+    position: relative;
+    height: 685px;
+    background: none;
+  }
+
+  #key_to_success .right_block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: none;
+    height: 0;
+  }
+
+  #key_to_success .flex {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+  }
+
+  #key_to_success .container {
+    position: absolute;
+    left: 0;
+    transform: translateX(0);
+    z-index: 0;
+    padding: 0px;
+    height: 1000px;
+  }
+
+  #key_to_success .block_1 {
+    text-align: center;
+    min-height: 50%;
+    width: 100%;
+    background: var(--primary-grey);
+  }
+  
+  #key_to_success .block_2 {
+    text-align: center;
+    min-height: 50%;
+    width: 100%;
+    background: var(--primary-dark-blue);
+  }
 }
