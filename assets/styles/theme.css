@@ -20,7 +20,7 @@
     line-height: 125%;
     /* identical to box height, or 25px */
 
-    color: #000000;
+    color: var(--primary-dark-blue)
 }
 
 .h3 {
@@ -40,6 +40,19 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 137%;
+
+    color: #000000;
+}
+
+.s3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 137%;
+    /* identical to box height, or 25px */
+    
+    color: #000000;
 }
 
 .s4 {

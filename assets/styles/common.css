@@ -1,6 +1,28 @@
+.block_1 {
+  width: 100px;
+  height: 100px;
+  padding: 0 40px;
+}
+
+.block_2 {
+  width: 100px;
+  height: 100px;
+  padding: 0 40px;
+}
+
+.row_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.column_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .vertical_divider {
-    margin-right: 10px;
-    min-width: 2px;
-    background: var(--primary-accent-blue);    
-  }
-  
+  margin-right: 10px;
+  min-width: 2px;
+  background: var(--primary-accent-blue);    
+}
