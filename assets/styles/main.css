@@ -536,3 +536,63 @@ legend {
 #our_solutions .list_block .column_flex {
   gap: 10px;
 }
+
+/* Our control system */
+#our_control_system {
+  height: 870px;
+  background: linear-gradient(90.99deg, rgba(253, 253, 253, 0.8) 1.83%, rgba(253, 253, 253, 0.4) 64.26%, rgba(253, 253, 253, 0) 84.45%),
+    url("../images/city_top_view_shadow_1.png") no-repeat center,
+    url("../images/city_top_view.png") no-repeat center;
+}
+
+#our_control_system .title_2 {
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+#our_control_system .block_1 {
+  height: auto;
+  width: 750px;
+}
+
+#our_control_system .container {
+  padding: 120px 150px;
+}
+
+#our_control_system .column_flex {
+  gap: 80px;
+  justify-content: space-between;
+}
+
+#our_control_system .title_1 {
+  width: 850px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#our_control_system .progress_banner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 750px;
+  height: 220px;
+  background: rgba(154, 187, 250, 0.5);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+#our_control_system .block_2 {
+  height: auto;
+  width: 400px;
+}
+
+#our_control_system .row_flex {
+  justify-content: space-between;
+}
+
+#our_control_system .progress_line {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
