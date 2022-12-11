@@ -17,7 +17,7 @@ body {
   min-width: 1440px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 150px;
   overflow: auto;
 }
 
@@ -417,7 +417,7 @@ ul {
   justify-content: space-between;
 }
 
-#our_licenses fieldset > .row_flex {
+#our_licenses fieldset>.row_flex {
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -464,4 +464,75 @@ legend {
 
 #our_licenses li::marker {
   font-size: 1.4em;
+}
+
+/* Our solutions */
+#our_solutions {
+  height: 670px;
+  background: url("../images/ellipse_2.png") no-repeat, linear-gradient(90deg, var(--primary-dark-blue) 50%, var(--primary-grey) 50%);
+  background-position-x: calc(50% - 555px), center;
+  background-position-y: bottom, center;
+}
+
+#our_solutions .row_flex {
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+#our_solutions .block_1 {
+  min-width: 735px;
+  height: 100%;
+}
+
+#our_solutions .block_2 {
+  min-width: 705px;
+  height: 100%;
+}
+
+#our_solutions .column_flex {
+  justify-content: start;
+  gap: 25px;
+}
+
+#our_solutions .title_1 {
+  width: 510px;
+}
+
+#our_solutions .block_1 .row_flex {
+  min-height: 60px;
+  width: 460px;
+}
+
+#our_solutions .block_1.column_flex {
+  gap: 40px;
+}
+
+#our_solutions .block_2.column_flex {
+  align-content: flex-start;
+  max-width: 360px;
+  gap: 40px;
+  padding-left: 60px;
+}
+
+#our_solutions .block_2 .column_flex {
+  max-width: 360px;
+}
+
+#our_solutions .title_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 510px;
+}
+
+#our_solutions .list_block {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  width: 510px;
+}
+
+#our_solutions .list_block .column_flex {
+  gap: 10px;
 }
