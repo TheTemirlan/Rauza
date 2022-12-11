@@ -12,14 +12,16 @@
     --secondary-font: "Montserrat";
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-    line-height: 125%;
-    /* identical to box height, or 25px */
-
+    line-height: 125%; /* identical to box height, or 25px */
     color: var(--primary-dark-blue)
 }
 
@@ -28,9 +30,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 125%;
-    /* identical to box height, or 30px */
-
+    line-height: 125%; /* identical to box height, or 30px */
     color: #000000;
 }
 
@@ -39,8 +39,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 137%;
-
+    line-height: 137%; /* identical to box height, or 25px */
     color: #000000;
 }
 
@@ -49,9 +48,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 137%;
-    /* identical to box height, or 25px */
-    
+    line-height: 137%; /* identical to box height, or 25px */
     color: #000000;
 }
 
@@ -60,9 +57,16 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 125%;
-    /* identical to box height, or 20px */
+    line-height: 125%; /* identical to box height, or 20px */
+    color: #000000;
+}
 
+.s6 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%; /* identical to box height, or 18px */
     color: #000000;
 }
 
@@ -81,4 +85,3 @@
 .secondary_dark_grey {
     color: var(--secondary-dark-grey);
 }
-

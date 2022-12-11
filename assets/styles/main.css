@@ -11,13 +11,6 @@ body {
   min-width: 1440px;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .container {
   width: 1440px;
   height: 100%;
@@ -353,4 +346,49 @@ ul {
   flex-direction: column;
   gap: 10px;
   width: 300px;
+}
+
+/* Our capacities */
+#our_capacities {
+  height: 1140px;
+  background: url("../images/airport.png") no-repeat center, var(--primary-grey);
+}
+
+#our_capacities .column_flex {
+  gap: 50px;
+}
+
+.shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.9) 81.67%, #000000 100%);
+}
+
+#our_capacities .container {
+  padding: 120px 150px;
+}
+
+#our_capacities .infoblock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+#our_capacities .block {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  width: 260px;
+  height: 90px;
+  border: 1px solid var(--primary-grey);
+  border-radius: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.image_header {
+  flex-grow: 10;
 }

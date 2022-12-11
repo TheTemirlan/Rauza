@@ -10,6 +10,13 @@
   padding: 0 40px;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .row_flex {
   display: flex;
   justify-content: center;
