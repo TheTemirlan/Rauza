@@ -1,13 +1,3 @@
-.block_1 {
-  width: 100px;
-  height: 100px;
-}
-
-.block_2 {
-  width: 100px;
-  height: 100px;
-}
-
 .flex {
   display: flex;
   justify-content: space-between;

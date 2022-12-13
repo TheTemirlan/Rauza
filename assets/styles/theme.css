@@ -18,13 +18,22 @@ html {
     scroll-behavior: smooth;
 }
 
+
+.h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 125%;
+    color: var(--primary-dark-blue)
+}
+
 .h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 125%;
-    /* identical to box height, or 25px */
     color: var(--primary-dark-blue)
 }
 
@@ -34,7 +43,6 @@ html {
     font-weight: 500;
     font-size: 24px;
     line-height: 125%;
-    /* identical to box height, or 30px */
     color: #000000;
 }
 
@@ -44,7 +52,6 @@ html {
     font-weight: 500;
     font-size: 18px;
     line-height: 137%;
-    /* identical to box height, or 25px */
     color: #000000;
 }
 
@@ -54,7 +61,6 @@ html {
     font-weight: 400;
     font-size: 18px;
     line-height: 137%;
-    /* identical to box height, or 25px */
     color: #000000;
 }
 
@@ -64,7 +70,6 @@ html {
     font-weight: 500;
     font-size: 16px;
     line-height: 125%;
-    /* identical to box height, or 20px */
     color: #000000;
 }
 
@@ -74,7 +79,6 @@ html {
     font-weight: 400;
     font-size: 14px;
     line-height: 125%;
-    /* identical to box height, or 18px */
     color: #000000;
 }
 
@@ -97,4 +101,3 @@ html {
 .tertiary_blue {
     color: var(--tertiary-blue);
 }
-
