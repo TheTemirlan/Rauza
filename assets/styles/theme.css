@@ -103,6 +103,10 @@ html {
     color: var(--tertiary-white);
 }
 
+.primary_accent_blue {
+    color: var(--primary-accent-blue);
+}
+
 .primary_grey {
     color: var(--primary-grey);
 }

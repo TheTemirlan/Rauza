@@ -792,3 +792,48 @@ legend {
   flex-direction: column;
   gap: 10px;
 }
+
+/* Quality standard */
+#quality_standard {
+  height: 960px;
+  background: var(--primary-dark-blue);
+}
+
+#quality_standard .container {
+  background: url("../images/line_points.png") no-repeat, url("../images/quality_standard_bg.jpg");
+  background-position-y: 420px, 0;
+  position: relative;
+}
+
+#quality_standard .title_1 {
+  width: 555px;
+  margin-bottom: 80px;
+}
+
+#quality_standard .title_2 {
+  width: 555px;
+}
+
+#quality_standard .block_1 {
+  width: 260px;
+  top: 550px;
+  position: absolute;
+}
+
+#quality_standard .block_2 {
+  width: 260px;
+  left: 735px;
+  top: 315px;
+  position: absolute;
+}
+
+#quality_standard .block_3 {
+  width: 260px;
+  left: 1028px;
+  top: 550px;
+  position: absolute;
+}
+
+#quality_standard .block_header {
+  margin-bottom: 10px;
+}
