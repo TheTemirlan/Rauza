@@ -715,7 +715,8 @@ legend {
 }
 
 #future_technologies ul {
-  margin-top: 25px;
+  margin: 25px 0 0 0;
+  padding: 0;
 }
 
 #future_technologies li {

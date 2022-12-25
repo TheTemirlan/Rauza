@@ -90,10 +90,9 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17.5px;
+    line-height: 125%;
     color: var(--secondary-dark-grey)
 }
-
 
 .s7 {
     font-family: 'Montserrat';
