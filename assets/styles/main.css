@@ -879,3 +879,29 @@ legend {
   margin-left: 180px;
   width: 300px;
 }
+
+/* Our recent projects */
+#our_recent_projects {
+  min-height: 1065px;
+  background: var(--primary-dark-blue);
+}
+
+#our_recent_projects .uk-card-body {
+  height: 235px;
+}
+
+#our_recent_projects .card-body-header {
+  margin-top: 15px;
+}
+
+#our_recent_projects .card-body-text {
+  margin-top: 5px;
+}
+
+#our_recent_projects .uk-card-body {
+  padding: 30px 20px;
+}
+
+#our_recent_projects .slider {
+  margin-top: 50px;
+}
