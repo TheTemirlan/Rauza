@@ -837,3 +837,45 @@ legend {
 #quality_standard .block_header {
   margin-bottom: 10px;
 }
+
+/* Your ambitions */
+#your_ambitions {
+  height: 960px;
+  background: var(--primary-dark-blue);
+}
+
+#your_ambitions .flex_1 {
+  display: flex;
+}
+
+#your_ambitions .container {
+  padding: 0px 0px;  
+}
+
+#your_ambitions .block_1 {
+  padding-top: 120px;
+  padding-left: 150px;
+  width: 720px;
+  background: url("../images/building.jpg");
+}
+
+#your_ambitions .block_2 {
+  padding-top: 120px;
+  padding-right: 150px;
+  width: 720px;
+  background: url("../images/flying_apartment.jpg");
+}
+
+#your_ambitions .block_1_header {
+  margin-bottom: 5px;
+}
+
+#your_ambitions .block_2_header {
+  margin-top: 125px;
+  margin-bottom: 5px;
+}
+
+#your_ambitions .block_2_text {
+  margin-left: 180px;
+  width: 300px;
+}
