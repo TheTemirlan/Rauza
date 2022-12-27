@@ -15,6 +15,8 @@
     --tertiary-dark-grey: #8A8A8A;
     --tertiary-white: #FEFEFE;
     --tertiary-light-blue: #9ABBFA;
+
+    --white: #FFFFFF;
 }
 
 html {
@@ -138,4 +140,8 @@ html {
 
 .tertiary_blue {
     color: var(--tertiary-blue);
+}
+
+.white {
+    color: var(--white);
 }

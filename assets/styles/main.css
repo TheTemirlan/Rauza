@@ -956,6 +956,45 @@ legend {
   border-radius: 15px;
 }
 
+/* Footer */
+footer {
+  min-width: 1440px;
+  overflow: auto;
+  height: 405px;
+  background: var(--secondary-black);
+}
 
+footer .flex_1 {
+  display: flex;
+  align-items: center; 
+}
 
+footer .flex_2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+}
 
+footer .block_1 {
+  margin-left: 94px;
+  width: 216px;
+}
+
+footer .block_2 {
+  margin-left: 86px;
+  width: 216px;
+}
+
+footer ul {
+  margin-left: 86px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li a {
+  display: block;
+  color: #FFF;
+  padding: 8px 16px;
+  text-decoration: none;
+}
