@@ -117,7 +117,7 @@ ul {
 }
 
 /* Who we are */
-.who_we_are {
+#who_we_are {
   height: 350px;
   background: var(--primary-grey);
 }
