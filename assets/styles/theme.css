@@ -23,7 +23,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .h1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -49,6 +48,16 @@ html {
     font-size: 24px;
     line-height: 125%;
     color: #000000;
+}
+
+body h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+    color: #000000;
+    margin: 0;
 }
 
 .s1 {

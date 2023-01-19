@@ -19,9 +19,11 @@
 			<div class="navbar flex">
 				<img src="assets/images/logo_white.png" class="logo">
 				<nav>
-					<a href="#who_we_are">О Нас</a>
-					<a href="#our_recent_projects">Галерея</a>
-					<a href="#footer">Контакты</a>
+					<ul>
+						<li><a href="#who_we_are">О Нас</a></li>
+						<li><a href="#our_recent_projects">Галерея</a></li>
+						<li><a href="#footer">Контакты</a></li>
+					</ul>
 				</nav>
 			</div>
 			<div class="flex">
@@ -36,11 +38,42 @@
 		</div>
 	</div>
 
-	<div class="banner podium">
+	<div class="podium row_flex">
 		<img src="assets/images/man.png" id="man">
-		<button class="cta_button cta_text">Связаться с нами</button>
+		<button id="contact_us_btn" class="cta_button margin_top">Связаться с нами</button>
 	</div>
 	<!-- Banner end -->
+
+	<!-- Contact us form -->
+	<div id="contact_us" class="contact_us" uk-modal>
+		<div class="contact_us_form top_and_bottom_padding uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+			<form id="send_application_form">
+				<legend class="uk-legend"><h3 class="primary_dark_blue">ДАВАЙТЕ ОБСУДИМ<br>ВАШУ ЗАДАЧУ</h3></legend>
+				
+				<div class="uk-margin">
+					<input class="uk-input" type="text" name="name" placeholder="Ваше имя">
+				</div>
+		
+				<div class="uk-margin">
+					<input class="uk-input" type="email" name="email" placeholder="E-mail" required>
+				</div>
+
+				<div class="uk-margin">
+					<input class="uk-input" type="text" name="phone" placeholder="Номер телефона">
+				</div>
+				<button id="send_application_btn" class="cta_button">Отправить заявку</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="application_sent" class="application_sent" uk-modal>
+		<div class="application_sent_confirmation uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+			<h3 class="primary_dark_blue">СПАСИБО!<br> ЗАЯВКА ОТПРАВЛЕНА</h3>
+			<p class="s2 primary_dark_blue">Наш менеджер свяжется с вами
+				в течении 10 мин</p>
+		</div>
+	</div>
+	<!-- Contact us form end-->
 
 	<!-- Who we are -->
 	<div id="who_we_are">
@@ -823,5 +856,8 @@
 	</footer>
 	<!-- Footer end -->
 </body>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="main.js"></script>
 
 </html>
