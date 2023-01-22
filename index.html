@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/styles/main.css">
 	<link rel="stylesheet" href="assets/uikit3/css/uikit.min.css" />
+	<link rel="stylesheet" href="assets/styles/main.css">
 	<script src="assets/uikit3/js/uikit.min.js"></script>
 	<script src="assets/uikit3/js/uikit-icons.min.js"></script>
 	<title>Rauza</title>
@@ -17,18 +17,33 @@
 		<div class="container">
 			<!-- Navbar -->
 			<div class="navbar flex">
-				<img src="assets/images/logo_white.png" class="logo">
-				<nav>
+				<div class="logo_white"></div>
+				
+				<nav class="desktop_nav">
 					<ul>
 						<li><a href="#who_we_are">О Нас</a></li>
 						<li><a href="#our_recent_projects">Галерея</a></li>
 						<li><a href="#footer">Контакты</a></li>
 					</ul>
 				</nav>
+
+				<nav class="mobile_nav uk-navbar-transparent uk-navbar-container uk-margin" uk-navbar>
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+						<div class="uk-navbar-dropdown">
+							<ul class="s6 uk-nav uk-navbar-dropdown-nav">
+								<li><a href="#who_we_are">О Нас</a></li>
+								<li><a href="#our_recent_projects">Галерея</a></li>
+								<li><a href="#footer">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			</div>
+			<!-- Navbar end -->
 			<div class="flex">
-				<div id="banner_text">СТРОИМ БУДУЩЕЕ ДЛЯ ИСТОРИИ</div>
-				<img src="assets/images/banner_logo.png" id="banner_logo">
+				<h1 class="banner_text">СТРОИМ БУДУЩЕЕ ДЛЯ ИСТОРИИ</h1>
+				<div class="banner_logo"></div>
 			</div>
 		</div>
 		<div id="curtain_flex">
@@ -48,12 +63,14 @@
 	<div id="contact_us" class="contact_us" uk-modal>
 		<div class="contact_us_form top_and_bottom_padding uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 			<form id="send_application_form">
-				<legend class="uk-legend"><h3 class="primary_dark_blue">ДАВАЙТЕ ОБСУДИМ<br>ВАШУ ЗАДАЧУ</h3></legend>
-				
+				<legend class="uk-legend">
+					<h3 class="primary_dark_blue">ДАВАЙТЕ ОБСУДИМ<br>ВАШУ ЗАДАЧУ</h3>
+				</legend>
+
 				<div class="uk-margin">
 					<input class="uk-input" type="text" name="name" placeholder="Ваше имя">
 				</div>
-		
+
 				<div class="uk-margin">
 					<input class="uk-input" type="email" name="email" placeholder="E-mail" required>
 				</div>
@@ -77,54 +94,56 @@
 
 	<!-- Who we are -->
 	<div id="who_we_are">
-		<div class="container flex">
-			<div id="who_we_are_logo">
-				<img src="assets/images/logo_blue.png">
-				<div class="h2 primary_dark_blue">
+		<div class="container row_flex">
+			<div class="who_we_are_logo">
+				<div class="logo_blue"></div>
+				<h2 class="centered_text margin_top primary_dark_blue">
 					КТО МЫ
-				</div>
+				</h2>
 			</div>
-			<div id="who_we_are_text_block" class="s2 secondary_black">
-				КОМПАНИЯ RAUZA - это Казахстанский эксперт в области управления<br>
-				и реализации сложного, крупного и особо ответственного строительства,<br>
-				а так же обслуживании таких предприятий, включая промышленные<br>
+			<p class="s2 secondary_black">
+				КОМПАНИЯ RAUZA - это Казахстанский эксперт в области управления
+				и реализации сложного, крупного и особо ответственного строительства,
+				а так же обслуживании таких предприятий, включая промышленные
 				объекты, коммерческую недвижимость и объекты особого назначения
-			</div>
+			</p>
 		</div>
 	</div>
 	<!-- Who we are end -->
 
 	<!-- Our experience -->
 	<div id="our_experience">
-		<div class="container flex">
-			<div id="our_experience_content">
-				<div id="our_experience_block">
-					<div class="h3 primary_grey our_experience_h1">ЗОНЫ РАБОТ</div>
-					<div class="s2 primary_grey our_experience_h2">ВЕСЬ СПЕКТР</div>
-					<div class="our_experience_h3">
-						<div class="vertical_divider"></div>
-						<div class="s4 secondary_dark_grey">От концепта до сдачи<br>в эксплуатацию
-							и обслуживание</div>
-					</div>
-					<div class="s2 primary_grey our_experience_h2">ВСЕ ВИДЫ РАБОТ<br>НА ВСЕХ ВИДАХ НАПРАВЛЕНИЙ</div>
-					<div class="our_experience_h3">
-						<div class="vertical_divider"></div>
-						<div class="s4 secondary_dark_grey">От прокладки кабеля<br>до строительства
-							сложных<br>технологических объектов</div>
+		<div class="container flex_1">
+			<div class="block_1">
+				<h3>ЗОНЫ РАБОТ</h3>
+				<div class="s2">ВЕСЬ СПЕКТР</div>
+				<div class="block_2">
+					<div class="vertical_divider"></div>
+					<div class="s4 secondary_dark_grey">От концепта до сдачи<br>в эксплуатацию
+						и обслуживание</div>
+				</div>
+				<div class="s2">ВСЕ ВИДЫ РАБОТ<br>НА ВСЕХ ВИДАХ НАПРАВЛЕНИЙ</div>
+				<div class="block_2">
+					<div class="vertical_divider"></div>
+					<div class="s4 secondary_dark_grey">От прокладки кабеля<br>до строительства
+						сложных<br>технологических объектов</div>
+				</div>
+			</div>
+			<div class="block_1">
+				<h3>НАШ ОПЫТ</h3>
+				<div class=" years_box">
+					<div>
+						<div class="years"></div>
+						<div class="s4">лет опыта</div>
 					</div>
 				</div>
-				<div id="our_experience_block">
-					<div class="h3 primary_grey our_experience_h1">НАШ ОПЫТ</div>
-					<img src="assets/images/20_years.png">
-					<div class="s4 secondary_dark_grey our_experience_h3">лет опыта</div>
-				</div>
-				<div id="our_experience_block">
-					<div class="h3 primary_grey our_experience_h1">НАША МИССИЯ</div>
-					<div class="our_experience_h3">
-						<div class="vertical_divider"></div>
-						<div class="s4 secondary_dark_grey">Реализация и тех. поддержка<br> проектов создающих<br>
-							позитивную среду для развития<br>качества жизни в Казахстане</div>
-					</div>
+			</div>
+			<div class="block_1">
+				<h3>НАША МИССИЯ</h3>
+				<div class="block_2">
+					<div class="vertical_divider"></div>
+					<div class="s4">Реализация и тех. поддержка<br> проектов создающих<br>
+						позитивную среду для развития<br>качества жизни в Казахстане</div>
 				</div>
 			</div>
 		</div>
@@ -135,29 +154,29 @@
 	<div id="our_achievements">
 		<div class="container flex">
 			<div id="our_achievements_content">
-				<div class="h2 primary_dark_blue" id="our_achievements_title">НАШИ ДОСТИЖЕНИЯ В ЦИФРАХ</div>
+				<h2 class="title">НАШИ ДОСТИЖЕНИЯ В ЦИФРАХ</div>
 				<div class="flex_1">
 					<div class="flex_2">
-						<div class="flex_3">
-							<div class="h2">25,000км</div>
+						<div class="block_1">
+							<h2>25,000км</h2>
 							<div class="s4 primary_dark_blue">Инженерных сетей<br>спроектировано</div>
 						</div>
-						<div class="flex_3">
-							<div class="h2">80,000м2</div>
+						<div class="block_1">
+							<h2>80,000м2</h2>
 							<div class="s4 primary_dark_blue">Жилых и промышленных<br>объектов спроектировано</div>
 						</div>
-						<div class="flex_3">
-							<div class="h2">3,000км2</div>
+						<div class="block_1">
+							<h2>3,000км2</h2>
 							<div class="s4 primary_dark_blue">Инженерных сетей<br>построено</div>
 						</div>
 					</div>
 					<div class="flex_2">
-						<div class="flex_3">
-							<div class="h2">10,000м2</div>
+						<div class="block_1">
+							<h2>10,000м2</h2>
 							<div class="s4 primary_dark_blue">Жилых и промышленных<br>объектов построено</div>
 						</div>
-						<div class="flex_3">
-							<div class="h2">6,000м2</div>
+						<div class="block_1">
+							<h2>6,000м2</h2>
 							<div class="s4 primary_dark_blue">Клининг и техническое<br>обслуживание</div>
 						</div>
 					</div>

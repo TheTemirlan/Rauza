@@ -1,6 +1,5 @@
 .flex {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -19,7 +18,8 @@
 
 .vertical_divider {
   margin-right: 10px;
-  min-width: 2px;
+  width: 2px;
+  height: auto;
   background: var(--primary-accent-blue);    
 }
 
@@ -40,16 +40,6 @@
   padding-bottom: 120px;
 }
 
-.container {
-  width: 1440px;
-  height: 100%;
-  min-width: 1440px;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 120px 150px;
-  overflow: auto;
-}
-
 .cta_button {
   border: none;
   width: 250px;
@@ -63,4 +53,16 @@
   line-height: 125%;
   background: var(--primary-accent-blue);
   color: var(--tertiary-white);
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.centered_text {
+  text-align: center;
+}
+
+.margin_top {
+  margin-top: 15px;
 }

@@ -23,11 +23,20 @@ html {
     scroll-behavior: smooth;
 }
 
-.h1 {
+body h1 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 52px;
+    line-height: 125%;
+    color: var(--primary-dark-blue)
+}
+
+body h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
     line-height: 125%;
     color: var(--primary-dark-blue)
 }
