@@ -1080,7 +1080,7 @@ footer li a {
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   body {
     min-width: none;
     max-width: none;
