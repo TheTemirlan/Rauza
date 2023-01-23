@@ -61,6 +61,7 @@ ul {
 .logo_blue {
   background-image: url("../images/logo_blue.png");
   background-repeat: no-repeat;
+  background-size: contain;
   width: 165px;
   height: 50px;
 }
@@ -140,6 +141,12 @@ ul {
   height: 225px;
   background: radial-gradient(54.46% 54.46% at 50% 0%, rgba(63, 63, 68, 0.5) 0%, rgba(63, 63, 68, 0.9) 20.38%, rgba(63, 63, 68, 0.98) 38.57%, #3F3F44 49.85%, #3F3F44 72.87%);
   position: relative
+}
+
+.cta_button {
+  transform: translate(0, -50%);
+  position: absolute;
+  top: 40%;
 }
 
 #man {
@@ -299,27 +306,31 @@ ul {
   text-align: center;
 }
 
-/* Out achievements */
+/* Out specializations */
 #our_specializations {
-  height: 540px;
+  min-height: 540px;
+  height: auto;
   background: var(--primary-grey);
 }
 
-#our_specializations .container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 70px;
-  padding-top: 120px;
-  padding-bottom: 90px;
+#our_specializations h2 {
+  margin-bottom: 70px;
 }
 
-#our_specializations .block {
+#our_specializations .flex_1 {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#our_specializations .block_1 {
   display: flex;
   align-items: center;
   column-gap: 15px;
   height: 60px;
-  min-width: 360px;
-  max-width: 360px;
+  width: 360px;
 }
 
 #our_specializations .s4 {
@@ -1082,8 +1093,8 @@ footer li a {
 
 @media only screen and (max-width: 600px) {
   body {
-    width: 100vw;
     min-width: 375px;
+    width: 100%;
   }
 
   body h1 {
@@ -1119,10 +1130,7 @@ footer li a {
   }
 
   .logo_blue {
-    display: block;
-    margin: 0 auto;
     background-image: url("../images/mobile/logo_blue.png");
-    background-repeat: no-repeat;
     width: 80px;
     height: 40px;
   }
@@ -1186,6 +1194,17 @@ footer li a {
     font-size: 52px;
   }
 
+  .podium {
+    height: 84px;
+  }
+
+  .cta_button {
+    width: 166px;
+    height: 44px;
+    font-size: 16px;
+    top: 45%;
+  }
+  
   /* Who we are */
   #who_we_are {
     min-height: 235px;
@@ -1277,5 +1296,30 @@ footer li a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  } 
+  }
+
+  /* Our specializations */
+  #our_specializations {
+    min-height: 436px;
+  }
+
+  #our_specializations .flex_1 {
+    row-gap: 20px;
+  }
+
+  #our_specializations .block_1 {
+    word-wrap: break-word;
+    column-gap: 5px;
+    height: 72px;
+    width: 168px;
+  }
+
+  #our_specializations img {
+    height: 40px;
+    width: 40px;
+  }
+
+  #our_specializations h2 {
+    margin-bottom: 25px;
+  }
 }
