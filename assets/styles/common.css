@@ -23,23 +23,6 @@
   background: var(--primary-accent-blue);    
 }
 
-.block_padding_left {
-  padding-left: 150px;
-}
-
-.block_padding_right {
-  padding-left: 150px;
-}
-
-.block_padding_lr {
-  padding-left: 150px;
-}
-
-.block_padding_tb {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .cta_button {
   border: none;
   width: 250px;
