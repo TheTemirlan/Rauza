@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" user-scalable="no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+		user-scalable="no">
 	<link rel="stylesheet" href="assets/uikit3/css/uikit.min.css" />
 	<link rel="stylesheet" href="assets/styles/main.css">
 	<script src="assets/uikit3/js/uikit.min.js"></script>
@@ -18,7 +19,7 @@
 			<!-- Navbar -->
 			<div class="navbar flex">
 				<div class="logo_white"></div>
-				
+
 				<nav class="desktop_nav">
 					<ul>
 						<li><a href="#who_we_are">О Нас</a></li>
@@ -62,29 +63,28 @@
 	<!-- Contact us form -->
 	<div id="contact_us" class="contact_us" uk-modal>
 		<div class="contact_us_form top_and_bottom_padding uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-			<form id="send_application_form">
-				<legend class="uk-legend">
-					<h3 class="primary_dark_blue">ДАВАЙТЕ ОБСУДИМ<br>ВАШУ ЗАДАЧУ</h3>
-				</legend>
+			<div>
+				<form id="send_application_form">
+					<legend class="uk-legend">
+						<h3 class="primary_dark_blue">ДАВАЙТЕ ОБСУДИМ<br>ВАШУ ЗАДАЧУ</h3>
+					</legend>
 
-				<div class="uk-margin">
-					<input class="uk-input" type="text" name="name" placeholder="Ваше имя">
-				</div>
+					<div class="flex_1">
+						<input class="uk-input" type="text" name="name" placeholder="Ваше имя">
 
-				<div class="uk-margin">
-					<input class="uk-input" type="email" name="email" placeholder="E-mail" required>
-				</div>
+						<input class="uk-input" type="email" name="email" placeholder="E-mail" required>
 
-				<div class="uk-margin">
-					<input class="uk-input" type="text" name="phone" placeholder="Номер телефона">
-				</div>
-				<button id="send_application_btn" class="cta_button">Отправить заявку</button>
-			</form>
+						<input class="uk-input" type="text" name="phone" placeholder="Номер телефона">
+					</div>
+
+					<button id="send_application_btn" class="cta_button">Отправить заявку</button>
+				</form>
+			</div>
 		</div>
 	</div>
 
-	<div id="application_sent" class="application_sent" uk-modal>
-		<div class="application_sent_confirmation uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+	<div id="application_sent" uk-modal>
+		<div class="contact_us_form uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 			<h3 class="primary_dark_blue">СПАСИБО!<br> ЗАЯВКА ОТПРАВЛЕНА</h3>
 			<p class="s2 primary_dark_blue">Наш менеджер свяжется с вами
 				в течении 10 мин</p>
@@ -154,35 +154,36 @@
 	<div id="our_achievements">
 		<div class="container flex">
 			<div id="our_achievements_content">
-				<h2 class="title">НАШИ ДОСТИЖЕНИЯ В ЦИФРАХ</div>
-				<div class="flex_1">
-					<div class="flex_2">
-						<div class="block_1">
-							<h2>25,000км</h2>
-							<div class="s4 primary_dark_blue">Инженерных сетей<br>спроектировано</div>
-						</div>
-						<div class="block_1">
-							<h2>80,000м2</h2>
-							<div class="s4 primary_dark_blue">Жилых и промышленных<br>объектов спроектировано</div>
-						</div>
-						<div class="block_1">
-							<h2>3,000км2</h2>
-							<div class="s4 primary_dark_blue">Инженерных сетей<br>построено</div>
-						</div>
+				<h2 class="title">НАШИ ДОСТИЖЕНИЯ В ЦИФРАХ
+			</div>
+			<div class="flex_1">
+				<div class="flex_2">
+					<div class="block_1">
+						<h2>25,000км</h2>
+						<div class="s4 primary_dark_blue">Инженерных сетей<br>спроектировано</div>
 					</div>
-					<div class="flex_2">
-						<div class="block_1">
-							<h2>10,000м2</h2>
-							<div class="s4 primary_dark_blue">Жилых и промышленных<br>объектов построено</div>
-						</div>
-						<div class="block_1">
-							<h2>6,000м2</h2>
-							<div class="s4 primary_dark_blue">Клининг и техническое<br>обслуживание</div>
-						</div>
+					<div class="block_1">
+						<h2>80,000м2</h2>
+						<div class="s4 primary_dark_blue">Жилых и промышленных<br>объектов спроектировано</div>
+					</div>
+					<div class="block_1">
+						<h2>3,000км2</h2>
+						<div class="s4 primary_dark_blue">Инженерных сетей<br>построено</div>
+					</div>
+				</div>
+				<div class="flex_2">
+					<div class="block_1">
+						<h2>10,000м2</h2>
+						<div class="s4 primary_dark_blue">Жилых и промышленных<br>объектов построено</div>
+					</div>
+					<div class="block_1">
+						<h2>6,000м2</h2>
+						<div class="s4 primary_dark_blue">Клининг и техническое<br>обслуживание</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<!-- Out achievements end -->
 

@@ -143,7 +143,7 @@ ul {
   position: relative
 }
 
-.cta_button {
+#contact_us_btn.cta_button {
   transform: translate(0, -50%);
   position: absolute;
   top: 40%;
@@ -158,17 +158,28 @@ ul {
 }
 
 /* Contact us form */
-.contact_us .contact_us_form {
+.contact_us_form {
   width: 420px;
   border-radius: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
+  text-align: center;
+}
+
+#contact_us .flex_1 {
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact_us .cta_button {
+  width: 100%;
 }
 
 .contact_us_form .uk-legend {
   justify-content: center;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .contact_us_form .uk-input {
@@ -176,14 +187,9 @@ ul {
   border-radius: 6px;
 }
 
-.contact_us .cta_button {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.application_sent {
+/* .application_sent {
   text-align: center;
-}
+} */
 
 .application_sent .application_sent_confirmation {
   width: 420px;
@@ -1091,7 +1097,7 @@ footer li a {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   body {
     min-width: 375px;
     width: 100%;
@@ -1198,13 +1204,27 @@ footer li a {
     height: 84px;
   }
 
-  .cta_button {
-    width: 166px;
-    height: 44px;
+  #contact_us .cta_button {
+    width: 100%;
+    height: 50px;
     font-size: 16px;
     top: 45%;
   }
-  
+
+  /* Contact us form */
+  .contact_us_form {
+    width: 300px;
+    min-width: 300px;
+    border-radius: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  #send_application_btn {
+    width: 100px;
+  } 
+
   /* Who we are */
   #who_we_are {
     min-height: 235px;
