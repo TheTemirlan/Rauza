@@ -80,8 +80,6 @@ ul {
   background-repeat: no-repeat;
   width: 290px;
   height: 250px;
-  margin-top: 190px;
-  top: 300px;
   font-family: var(--primary-font);
   font-size: 52px;
 }
@@ -92,7 +90,20 @@ ul {
   height: 800px;
 }
 
+#banner .flex_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#banner h1 {
+  margin: 0;
+}
+
 #banner .container {
+  display: flex;
+  flex-direction: column;
   padding: 0 150px;
 }
 
@@ -110,8 +121,7 @@ ul {
 
 .banner_text {
   margin-top: 200px;
-  width: 140px;
-  height: 120px;
+  width: 300px;
   color: var(--primary-grey);
 }
 
@@ -187,18 +197,7 @@ ul {
   border-radius: 6px;
 }
 
-/* .application_sent {
-  text-align: center;
-} */
-
-.application_sent .application_sent_confirmation {
-  width: 420px;
-  border-radius: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.application_sent p {
+#application_sent p {
   margin-top: 25px;
 }
 
@@ -1191,11 +1190,14 @@ footer li a {
     padding: 0 16px;
   }
 
+  #banner .banner_text {
+    width: 150px;
+    color: var(--primary-grey);
+  }
+  
   #banner .banner_logo {
     width: 120px;
     height: 100px;
-    margin-top: 190px;
-    top: 300px;
     font-family: var(--primary-font);
     font-size: 52px;
   }
@@ -1216,14 +1218,17 @@ footer li a {
     width: 300px;
     min-width: 300px;
     border-radius: 35px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 30px;
     text-align: center;
   }
 
   #send_application_btn {
     width: 100px;
   } 
+  
+  #application_sent p {
+    margin-top: 20px;
+  }
 
   /* Who we are */
   #who_we_are {
