@@ -356,7 +356,10 @@ ul {
 }
 
 #only_with_us .infoblock {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
   margin-top: 45px;
 }
 
@@ -1349,12 +1352,13 @@ footer li a {
 
   /* Why only with us */
   #only_with_us {
+    height: 329px;
     min-height: 329px;
   }
 
   #only_with_us .infoblock {
+    row-gap: 20px;
     margin-top: 20px;
-    width: 100%;
   }
 
   #only_with_us .container {
@@ -1366,14 +1370,8 @@ footer li a {
   }
 
   #only_with_us .s4 {
-    width: 168px;
+    width: 164px;
     height: 100%;
     color: var(--primary-grey);
-  }
-
-  #only_with_us .flex {
-    display: flex;
-    justify-content: space-between;
-    row-gap: 20px;
   }
 }
