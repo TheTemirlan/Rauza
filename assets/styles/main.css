@@ -440,6 +440,12 @@ ul {
   background: url("../images/airport.jpg") no-repeat top, var(--primary-grey);
 }
 
+#our_capacities .img_kazakhstan {
+  width: auto;
+  height: 252px;
+  background: url("../images/kazakhstan.png") no-repeat;
+}
+
 #our_capacities .column_flex {
   justify-content: space-between;
   gap: 50px;
@@ -447,6 +453,7 @@ ul {
 }
 
 #our_capacities h2 {
+  margin-top: 270px;
   margin-bottom: 50px;
 }
 
@@ -1451,8 +1458,15 @@ footer li a {
 
 /* Our capacities */
 #our_capacities {
-  height: 1140px;
+  min-height: 1140px;
+  height: auto;
   background: url("../images/airport.jpg") no-repeat top, var(--primary-grey);
+}
+
+#our_capacities .img_kazakhstan {
+  width: auto;
+  height: 222px;
+  background: url("../images/mobile/kazakhstan.png") no-repeat center;
 }
 
 #our_capacities .column_flex {
@@ -1462,6 +1476,7 @@ footer li a {
 }
 
 #our_capacities h2 {
+  margin-top: 156px;
   margin-bottom: 30px;
   text-align: center;
 }
