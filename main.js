@@ -1,3 +1,6 @@
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 const form = document.getElementById('send_application_form');
 
 UIkit.util.on('#contact_us_btn', 'click', function (e) {
