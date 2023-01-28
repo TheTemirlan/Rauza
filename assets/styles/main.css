@@ -237,8 +237,12 @@ fieldset {
   margin-left: 128px;
 }
 
-.who_we_are_logo {
+#who_we_are .logo {
   display: inline-block;
+}
+
+#who_we_are p.s2.secondary_black {
+  font-size: 12px;
 }
 
 /* Our experience */
@@ -1322,7 +1326,7 @@ footer li a {
   }
 
   #who_we_are p {
-    margin-left: 22px;
+    margin-left: 8px;
   }
 
   #who_we_are h2 {
@@ -1466,6 +1470,11 @@ footer li a {
 
   #key_to_success .row_flex {
     gap: 10px;
+  }
+
+  #key_to_success .block_3 img{
+    width: 40px;
+    height: 40px;
   }
 
   #key_to_success .s3 {
