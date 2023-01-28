@@ -1828,6 +1828,7 @@ footer li a {
   /* Our team */
   #our_team {
     height: 940px;
+    min-height: 940px;
     background: url("../images/worker.png") no-repeat, linear-gradient(0deg, #BABABA 0%, rgba(186, 186, 186, 0.7) 31.74%, rgba(255, 255, 255, 0.5) 69.66%);
     background-position: calc(50% + 108px) calc(100% + 30px), center;
     background-size: 180px 300px, 100%;
@@ -1849,6 +1850,7 @@ footer li a {
   
   #our_team .title_2 {
     font-size: 32px;
+    margin-top: 0px;
     width: 100%;
     margin-bottom: 15px;
   }
