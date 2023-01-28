@@ -761,8 +761,13 @@ fieldset {
 /* Our team */
 #our_team {
   height: 865px;
-  background: url("../images/worker.png") no-repeat, url("../images/worker_ellipse.png") no-repeat, url("../images/our_team_bg.jpg");
+  background: url("../images/worker.png") no-repeat, url("../images/worker_ellipse.png") no-repeat, var(--primary-grey);
   background-position: bottom center, calc(50% + 30px) calc(100% - 100px), center center;
+}
+
+#our_team .container {
+  background: url("../images/worker.png") no-repeat, url("../images/our_team_bg.jpg");
+  background-position: bottom center, center center;
 }
 
 #our_team .flex_1 {
@@ -1803,6 +1808,10 @@ footer li a {
     background: url("../images/worker.png") no-repeat, linear-gradient(0deg, #BABABA 0%, rgba(186, 186, 186, 0.7) 31.74%, rgba(255, 255, 255, 0.5) 69.66%);
     background-position: calc(50% + 108px) calc(100% + 30px), center;
     background-size: 180px 300px, 100%;
+  }
+
+  #our_team .container {
+    background: none;
   }
 
   #our_team .flex_1 {
