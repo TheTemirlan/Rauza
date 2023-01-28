@@ -611,6 +611,24 @@ fieldset {
   height: 60px;
 }
 
+#our_licenses .li_block {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+#our_licenses .li_block_marker {
+  content: url("../images/dot_white.png");
+  margin-right: 15px;
+}
+
+#our_licenses .block_1 {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
 /* Our solutions */
 #our_solutions {
   background: url("../images/ellipse_3.png") no-repeat, linear-gradient(90deg, var(--primary-dark-blue) calc(50% + 15px), var(--primary-grey) calc(50% + 15px));
@@ -761,13 +779,14 @@ fieldset {
 /* Our team */
 #our_team {
   height: 865px;
-  background: url("../images/worker.png") no-repeat, url("../images/worker_ellipse.png") no-repeat, var(--primary-grey);
-  background-position: bottom center, calc(50% + 30px) calc(100% - 100px), center center;
+  background: var(--primary-grey);
+  /* background: url("../images/worker.png") no-repeat,  var(--primary-grey);
+  background-position: bottom calc(50% + 30px), calc(50% + 30px) calc(100% - 100px), center center; */
 }
 
 #our_team .container {
-  background: url("../images/worker.png") no-repeat, url("../images/our_team_bg.jpg");
-  background-position: bottom center, center center;
+  background: url("../images/worker.png") no-repeat,url("../images/worker_ellipse.png") no-repeat, url("../images/our_team_bg.jpg");
+  background-position: calc(50% + 15px) bottom, calc(50% + 30px) calc(100% - 100px),center center;
 }
 
 #our_team .flex_1 {
@@ -783,6 +802,8 @@ fieldset {
 
 #our_team .title_2 {
   width: 450px;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 #our_team .block_1 {
@@ -810,27 +831,29 @@ fieldset {
   height: 100%;
 }
 
+#our_team .part_2 {
+  margin-left: 30px;
+}
+
 #our_team .block_2_header {
   margin-bottom: 10px;
 }
 
-#our_team ul {
-  margin-left: 20px;
-  list-style: disc outside none;
+#our_team .li_block {
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
-#our_team li::marker {
-  font-size: 2em;
+#our_team .li_block_marker {
+  margin-right: 15px;
 }
 
-#our_team .ul_column_flex {
+#our_team .block_4 {
+  margin-left: 136px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-}
-
-#our_team .list {
-  margin-left: 160px;
+  row-gap: 15px;
 }
 
 /* Future technologies */
@@ -1823,13 +1846,9 @@ footer li a {
     width: 100%;
     margin-bottom: 30px;
   }
-
-  #our_team h1 {
-    font-size: 32px;
-
-  }
-
+  
   #our_team .title_2 {
+    font-size: 32px;
     width: 100%;
     margin-bottom: 15px;
   }
@@ -1865,35 +1884,22 @@ footer li a {
     height: 100%;
   }
 
-  #our_team ul{
-    list-style-position: inside;
-  }
-
-  #our_team li::marker {
-    display: inline-block;
-    vertical-align: baseline;
-  }
-
   #our_team .block_2_header {
     margin-bottom: 5px;
   }
 
-  #our_team ul {
-    margin-left: 20px;
-    list-style: disc outside none;
+  #our_team .li_block_marker {
+    margin-right: 15px;
   }
-
-  #our_team li::marker {
-    font-size: 2em;
-  }
-
-  #our_team .ul_column_flex {
+  
+  #our_team .block_4 {
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    row-gap: 15px;
   }
 
-  #our_team .list {
-    margin: 0;
+  #our_team .block_4 img {
+    content: url("../images/mobile/dot.png");
   }
 }
