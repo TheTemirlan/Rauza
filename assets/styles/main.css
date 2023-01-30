@@ -38,9 +38,9 @@ fieldset {
 }
 
 .container {
+  width: 1440px;
   max-width: 1440px;
   height: 100%;
-  margin: 0 0;
   padding: 120px 150px;
   margin: 0 auto;
   overflow: auto;
@@ -239,10 +239,6 @@ fieldset {
 
 #who_we_are .logo {
   display: inline-block;
-}
-
-#who_we_are p.s2.secondary_black {
-  font-size: 12px;
 }
 
 /* Our experience */
@@ -785,8 +781,8 @@ fieldset {
 }
 
 #our_team .container {
-  background: url("../images/worker.png") no-repeat,url("../images/worker_ellipse.png") no-repeat, url("../images/our_team_bg.jpg");
-  background-position: calc(50% + 15px) bottom, calc(50% + 30px) calc(100% - 100px),center center;
+  background: url("../images/worker.png") no-repeat, url("../images/worker_ellipse.png") no-repeat, url("../images/our_team_bg.jpg");
+  background-position: calc(50% + 15px) bottom, calc(50% + 30px) calc(100% - 100px), center center;
 }
 
 #our_team .flex_1 {
@@ -858,13 +854,141 @@ fieldset {
 
 /* Future technologies */
 #future_technologies {
+  display: flex;
+  flex-direction: column;
   height: 990px;
+  min-height: 990px;
+  background: var(--primary-dark-blue);
+  padding: 120px 0;
+}
+
+#future_technologies .header_part {
+  width: 1440px;
+  max-width: 1440px;
+  height: auto;
+  padding: 0px 150px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#future_technologies .flex_1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+#future_technologies .part_1 {
+  width: 50%;
+  height: 100%;
+  background: url("../images/screen.png") no-repeat;
+  background-position-x: calc(100% - 102px);
+  background-position-y: bottom;
+}
+
+#future_technologies .part_2 {
+  width: 50%;
+  height: 100%;
+}
+
+#future_technologies .notes {
+  margin-left: auto;
+  margin-right: 80px;
+  width: 292px;
+  height: 380px;
+  padding: 30px 30px 40px 30px;
+  background: var(--tertiary-dark-grey);
+  border-radius: 15px;
+}
+
+#future_technologies ul {
+  margin-top: 25px;
+}
+
+#future_technologies li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+#future_technologies .notes .title_1 {
+  margin: 0px;
+}
+
+#future_technologies .block_1 {
+  margin-left: auto;
+  width: 720px;
+  height: 100%;
+}
+
+#future_technologies .block_2 {
+  margin-right: auto;
+  width: 720px;
+  height: 100%;
+}
+
+#future_technologies .block_3_header {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+#future_technologies .block_3:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+#future_technologies .block_4 {
+  display: flex;
+  gap: 30px;
+}
+
+#future_technologies .block_5 {
+  display: flex;
+  width: 165px;
+}
+
+#future_technologies .block_5_exception_2 {
+  width: 175px;
+}
+
+#future_technologies .block_5_exception_3 {
+  width: 195px;
+}
+
+
+/* #future_technologies .test_1 {
+  width: 100%;
+}
+
+/* #future_technologies .container {
+  padding: 120px 150px 0px 150px;
+  width: 1440px;
+  height: auto;
+} */
+
+/* #future_technologies .title_1 {
+  width: 750px;
+} */
+
+/* #future_technologies .part_1 {
+  width: 100%;
   background: url("../images/screen.png") no-repeat, var(--primary-dark-blue);
   background-position-x: calc(50% - 500px), center;
   background-position-y: 270px, center;
 }
 
-#future_technologies .block_1 {
+#future_technologies .part_2 {
+  width: 100%;
+  background-position-y: 270px, center;
+} */
+
+/* #future_technologies {
+  display: flex;
+  flex-direction: column;
+  height: 990px; */
+/* background: url("../images/screen.png") no-repeat, var(--primary-dark-blue);
+  background-position-x: calc(50% - 500px), center;
+  background-position-y: 270px, center; */
+/* } */
+
+/* #future_technologies .block_1 {
   height: 100%;
   width: calc(100%/2 + 15px);
   position: relative;
@@ -873,21 +997,18 @@ fieldset {
 #future_technologies .block_2 {
   height: 100%;
   width: calc(100%/2 - 15px);
-}
+} */
 
-#future_technologies .title_1 {
+/* #future_technologies .title_1 {
   margin-bottom: 50px;
   max-width: 750px;
-}
+} */
 
-#future_technologies .title_2 {
+/* #future_technologies .title_2 {
   color: var(--tertiary-white);
 }
 
-#future_technologies .flex_1 {
-  display: flex;
-  flex-direction: row;
-}
+
 
 #future_technologies .flex_gap_1 {
   gap: 50px;
@@ -926,7 +1047,7 @@ fieldset {
 
 #future_technologies li {
   margin-bottom: 15px;
-}
+} */
 
 /* Any questions */
 #any_questions {
@@ -1359,6 +1480,10 @@ footer li a {
 
   #who_we_are p {
     margin-left: 8px;
+  }
+
+  #who_we_are p.s2.secondary_black {
+    font-size: 12px;
   }
 
   #who_we_are h2 {
@@ -1847,7 +1972,7 @@ footer li a {
     width: 100%;
     margin-bottom: 30px;
   }
-  
+
   #our_team .title_2 {
     font-size: 32px;
     margin-top: 0px;
@@ -1893,7 +2018,7 @@ footer li a {
   #our_team .li_block_marker {
     margin-right: 15px;
   }
-  
+
   #our_team .block_4 {
     margin-left: 0px;
     display: flex;
@@ -1903,5 +2028,111 @@ footer li a {
 
   #our_team .block_4 img {
     content: url("../images/mobile/dot.png");
+  }
+
+  /* Future technologies */
+  #future_technologies {
+    display: flex;
+    flex-direction: column;
+    height: 1196px;
+    background: var(--primary-dark-blue);
+    padding: 50px 0;
+  }
+
+  #future_technologies .header_part {
+    width: 375px;
+    height: auto;
+    padding: 0px 16px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  #future_technologies .flex_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  #future_technologies .part_1 {
+    width: 100%;
+    height: auto;
+    background: url("../images/screen.png") no-repeat;
+    background-size: auto 390px;
+    background-position-x: calc(50% - 102px);
+    background-position-y: bottom;
+  }
+
+  #future_technologies .part_2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  #future_technologies .block_1 {
+    margin: 0 auto;
+    width: 375px;
+    height: 420px;
+  }
+
+  #future_technologies .block_2 {
+    margin: 0 auto;
+    padding: 30px 16px 50px 16px;
+    width: 375px;
+    height: 100%;
+  }
+
+  #future_technologies .block_3_header {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #future_technologies .block_4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #future_technologies .block_5 {
+    display: flex;
+    width: 165px;
+  }
+
+  #future_technologies .notes {
+    margin-left: auto;
+    margin-right: 0px;
+    width: 236px;
+    height: 292px;
+    padding: 20px;
+    background: var(--tertiary-dark-grey);
+    border-radius: 15px;
+  }
+
+  #future_technologies ul {
+    margin-top: 15px;
+  }
+
+  #future_technologies li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  #future_technologies .notes .title_1 {
+    margin: 0px;
+  }
+
+  #future_technologies .notes .cta_text {
+    font-size: 16px;
+  }
+
+  #future_technologies .block_5_exception_1 {
+    width: 200px;
+  }
+
+  #future_technologies .block_5_exception_2 {
+    width: 175px;
+  }
+
+  #future_technologies .block_3:not(:last-child) {
+    margin-bottom: 25px;
   }
 }
