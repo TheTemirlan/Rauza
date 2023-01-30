@@ -38,6 +38,14 @@
   color: var(--tertiary-white);
 }
 
+.cta_button:hover {
+  background: var(--tertiary-blue);
+}
+
+.cta_button:active {
+  background: var(--tertiary-dark-blue);
+}
+
 .center {
   margin: 0 auto;
 }
