@@ -7,7 +7,6 @@ UIkit.util.on('#contact_us_btn', 'click', function (e) {
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    console.log('clicked');
 
     let name = form.elements['name'].value;
     let email = form.elements['email'].value;
