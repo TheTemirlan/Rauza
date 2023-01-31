@@ -42,24 +42,6 @@ body h2 {
     color: var(--primary-dark-blue)
 }
 
-.h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 125%;
-    color: var(--primary-dark-blue)
-}
-
-.h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 125%;
-    color: #000000;
-}
-
 body h3 {
     font-family: 'Roboto';
     font-style: normal;
