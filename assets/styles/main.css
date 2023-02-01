@@ -1171,7 +1171,7 @@ fieldset {
   margin-top: 50px;
 }
 
-/* Our recent projects */
+/* Our clients */
 #our_clients {
   min-height: 935px;
   background: var(--primary-dark-blue);
@@ -2296,7 +2296,6 @@ footer li a {
   }
 
   #your_ambitions .block_2 .header_2 {
-    /* font-size: 20px; */
     margin: 0;
   }
 
@@ -2310,5 +2309,115 @@ footer li a {
     margin-left: 110px;
     margin-top: 110px;
     width: 176px;
+  }
+
+  /* Our recent projects */
+  #our_recent_projects {
+    min-height: 760px;
+    background: var(--primary-dark-blue);
+  }
+
+  /* Our clients */
+  #our_clients {
+    min-height: 935px;
+    background: var(--primary-dark-blue);
+  }
+
+  #our_clients .title {
+    width: 100%;
+  }
+
+  #our_clients ul {
+    padding: 0;
+    margin: 0;
+    width: 260px;
+  }
+
+  #our_clients li {
+    margin-top: 20px;
+  }
+
+  #our_clients li:first-child {
+    margin-top: 0px;
+  }
+
+  #our_clients .block_1 {
+    width: 260px;
+  }
+
+  #our_clients .block_2 {
+    margin-left: 0px;
+    max-height: none;
+    margin-bottom: 30px;
+  }
+
+  #our_clients .flex_1 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #our_clients .flex_2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  #our_clients img {
+    width: 64px;
+  }
+
+  #our_clients .company_logo {
+    border-radius: 15px;
+  }
+
+  /* Footer */
+  footer {
+    min-width: 375px;
+    overflow: auto;
+    height: 250px;
+    background: var(--secondary-black);
+  }
+
+  footer .flex_1 {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  footer img {
+    content: url("../images/mobile/logo_white_medium.png");
+  }
+
+  footer .flex_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  footer .block_1 {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 168px;
+  }
+
+  footer .block_2 {
+    margin-left: 0px;
+    width: 100px;
+  }
+
+  footer ul {
+    margin-left: 86px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer li a {
+    display: block;
+    color: #FFF;
+    padding: 5px 16px;
+    text-decoration: none;
   }
 }
